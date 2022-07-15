@@ -6,7 +6,7 @@ import (
 
 // GithubOptions holds options for interacting with Github.
 type GithubOptions struct {
-	TokenPath     string
+	TokenPath string
 }
 
 // NewGithubOptions creates a GiteeOptions with default values.
@@ -16,7 +16,7 @@ func NewGithubOptions() *GiteeOptions {
 
 // AddFlags injects Gitee options into the given FlagSet.
 func (o *GithubOptions) AddFlags(fs *flag.FlagSet) {
-	o.addFlags("/etc/gitee/oauth", fs)
+	o.addFlags("/etc/gitub/oauth", fs)
 }
 
 // AddFlagsWithoutDefaultGithubTokenPath injects Gitee options into the given
